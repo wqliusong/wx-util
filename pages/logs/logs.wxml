@@ -1,0 +1,7 @@
+<!-- logs.wxml -->
+<view class="container log-list">
+		<view class="util-light" bindtap="openOffLight">
+				<text>闪光灯</text>
+		</view>
+		<camera mode='scanCode' device-position="back" flash="{{lightInfo}}" binderror="error" style="width: 1px; height: 1px;"></camera>
+</view>

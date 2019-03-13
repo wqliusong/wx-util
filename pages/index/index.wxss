@@ -1,0 +1,17 @@
+/**index.wxss**/
+
+.row-util{
+	width: 600rpx;
+	height: 200rpx;
+	border: 1px solid #ccc;
+	display: flex;
+	justify-content: center;
+}
+.child-util{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300rpx;
+	height: 200rpx;
+	border: 1px solid red;
+}
