@@ -1,7 +1,7 @@
-<!-- logs.wxml -->
-<view class="container log-list">
+<!-- light.wxml -->
+<view class="container light">
 		<view class="util-light" bindtap="openOffLight">
-				<text>闪光灯</text>
+				<text>手电筒</text>
 		</view>
 		<camera mode='scanCode' device-position="back" flash="{{lightInfo}}" binderror="error" style="width: 1px; height: 1px;"></camera>
 </view>

@@ -1,0 +1,6 @@
+/* pages/mirror/mirror.wxss */
+.mirror{
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+}

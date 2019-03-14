@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/light/light",
+    "pages/mirror/mirror",
+    "pages/compass/compass"
   ],
   "window":{
     "backgroundTextStyle":"light",

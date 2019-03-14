@@ -3,9 +3,11 @@
 .row-util{
 	width: 600rpx;
 	height: 200rpx;
-	border: 1px solid #ccc;
 	display: flex;
 	justify-content: center;
+  border-top: 1px solid red;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
 }
 .child-util{
 	display: flex;
@@ -13,5 +15,5 @@
 	align-items: center;
 	width: 300rpx;
 	height: 200rpx;
-	border: 1px solid red;
+	border-bottom: 1px solid red;
 }

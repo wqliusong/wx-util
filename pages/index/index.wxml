@@ -1,35 +1,38 @@
 <!-- index.wxml -->
 <view class="container">
-	<view class="row-util">
-		<view class="child-util" bindtap="bindViewTap">
-			<text class="text-util-1">1</text>
-		</view>
-		<view class="child-util">
-			<text class="text-util-2">2</text>
-		</view>
-	</view>
-	<view class="row-util">
-		<view class="child-util">
-			<text class="text-util-1">1</text>
-		</view>
-		<view class="child-util">
-			<text class="text-util-2">2</text>
-		</view>
-	</view>
-	<view class="row-util">
-		<view class="child-util">
-			<text class="text-util-1">1</text>
-		</view>
-		<view class="child-util">
-			<text class="text-util-2">2</text>
-		</view>
-	</view>
-	<view class="row-util">
-		<view class="child-util">
-			<text class="text-util-1">1</text>
-		</view>
-		<view class="child-util">
-			<text class="text-util-2">2</text>
-		</view>
-	</view>
+  <view class="row-util">
+    <view class="child-util" bindtap="goToLight">
+      <text class="text-util-1">手电筒</text>
+    </view>
+    <view class="child-util" bindtap="goToMirror">
+      <text class="text-util-2">镜子</text>
+    </view>
+  </view>
+  <view class="row-util">
+    <view class="child-util" bindtap="goToCompass">
+      <text class="text-util-1">指南针</text>
+    </view>
+    <view class="child-util">
+      <text class="text-util-2">2</text>
+    </view>
+  </view>
+  <view class="row-util">
+    <view class="child-util">
+      <text class="text-util-1">1</text>
+    </view>
+    <view class="child-util">
+      <text class="text-util-2">2</text>
+    </view>
+  </view>
+  <view class="row-util">
+    <view class="child-util">
+      <text class="text-util-1">1</text>
+    </view>
+    <view class="child-util">
+      <text class="text-util-2">2</text>
+    </view>
+  </view>
+  <!-- <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+  获取用户信息
+</button> -->
 </view>

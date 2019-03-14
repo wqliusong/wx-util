@@ -1,0 +1,14 @@
+<!-- pages/compass/compass.wxml -->
+<view class="container compass">
+  <text>
+    当前方向指向{{position}},
+    </text>
+  <view class="compassImg" >
+    <view class="flagBox" style="transform:rotate({{positionNumber}}deg)">
+      <view class="compassImgFlag"></view>
+    </view>
+  </view>
+  <text class="positionNumber">
+    {{positionNumber}}°
+    </text>
+</view>
