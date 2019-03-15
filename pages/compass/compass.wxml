@@ -3,12 +3,11 @@
   <text>
     当前方向指向{{position}},
     </text>
-  <view class="compassImg" >
-    <view class="flagBox" style="transform:rotate({{positionNumber}}deg)">
-      <view class="compassImgFlag"></view>
-    </view>
+  <view class="compass-img">
+    <view class="flag-box" style="transform:rotate({{positionNumber}}deg)"></view>
+    <view class="compass-img-flag"></view>
   </view>
-  <text class="positionNumber">
+  <text class="position-number">
     {{positionNumber}}°
     </text>
 </view>

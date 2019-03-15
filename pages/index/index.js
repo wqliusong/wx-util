@@ -27,6 +27,12 @@ Page({
       url: '../compass/compass'
     })
   },
+  //跳转水平仪
+  goToHorizontal: function() {
+    wx.navigateTo({
+      url: '../horizontal/horizontal'
+    })
+  },
   onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({

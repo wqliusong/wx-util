@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/light/light",
     "pages/mirror/mirror",
-    "pages/compass/compass"
+    "pages/compass/compass",
+    "pages/horizontal/horizontal"
   ],
   "window":{
     "backgroundTextStyle":"light",

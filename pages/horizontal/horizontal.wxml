@@ -1,0 +1,9 @@
+<!--pages/horizontal/horizontal.wxml-->
+<view class='container horizontal'>
+  <view class="horizontal-box">
+    <view class="horizontal-border"></view>
+    <view class='horizontal-center' style='transform:translate({{gamma}}px,{{beta}}px)'></view>
+  </view>
+  <text>水平值:{{gamma}}</text>
+  <text>垂直值:{{beta}}</text>
+</view>
