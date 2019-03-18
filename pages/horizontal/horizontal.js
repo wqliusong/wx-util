@@ -5,30 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    gamma: 100,
-    beta: 100
+    gamma: 0,
+    beta: 0,
+    horizontalAnimation: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    wx.startDeviceMotionListening({
-      interval: "normal",
-      success: () => {
-        console.log("调用成功")
-        wx.onDeviceMotionChange(res => {
-          console.log(res)
-          this.setData({
-            gamma: parseInt(res.gamma),
-            beta: parseInt(res.beta),
-          })
-        })
-      },
-      fail: () => {
-        console.log("调用失败")
-      }
-    })
+
   },
 
   /**
@@ -42,7 +28,33 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    console.log(123)
+    //微信wx的那些无限请求的方法, 他是经过微信调用然后传到后台, 再回传, 所以时间越长网络耗时越大, 所以真机调试会越来越卡, 但是编译预览, 就不会有问题
+    wx.startDeviceMotionListening({
+      interval: "game",
+      success: () => {
+        console.log("调用成功")
+        this.animation = wx.createAnimation({
+          duration: 200,
+          timingFunction: "normal",
+        })
+        wx.onDeviceMotionChange(res => {
+          // console.log(res)
+          this.animation.translate(parseInt(res.gamma), parseInt(res.beta)).step({
+            duration: 200,
+            timingFunction: "normal",
+          })
+          this.setData({
+            horizontalAnimation: this.animation.export(),
+            gamma: parseInt(res.gamma),
+            beta: parseInt(res.beta)
+          })
+        })
+      },
+      fail: () => {
+        console.log("调用失败")
+      }
+    })
   },
 
   /**

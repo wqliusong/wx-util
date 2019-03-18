@@ -4,7 +4,7 @@
     当前方向指向{{position}},
     </text>
   <view class="compass-img">
-    <view class="flag-box" style="transform:rotate({{positionNumber}}deg)"></view>
+    <view class="flag-box" animation="{{compassAnimation}}"></view>
     <view class="compass-img-flag"></view>
   </view>
   <text class="position-number">
